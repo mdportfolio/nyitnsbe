@@ -1,0 +1,197 @@
+html {
+	background-color:blue;
+}
+/*Homepage*/
+.nsbenav a, .social p{
+      color: white;
+}
+.desc p, .forms, h3, h1, p{
+	color: gold;
+}
+marquee {
+	color: gold;
+	background-color: black;
+}
+.nsbenav {
+	background: transparent;
+    overflow: hidden;
+	width: 100%;
+	height: 30%;
+	text-align: center;	
+	font-weight: bold;
+}
+.logo {
+	width: 190px;
+    height: 160px;
+	position: center;
+}
+* {box-sizing:border-box}
+.highlights {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.p, .n {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.n {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.p:hover, .n:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.bull {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .bull:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 4px;
+	color: white;
+}
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.con {
+    padding: 0 16px;
+}
+.con::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.title {
+    color: grey;
+}
+/*About*/
+h1, q{
+	color: gold;
+}
+q {
+	font-style:italic, bold;
+	font-size:26px;
+}
+
+/*Events*/
+#cf_iv5{
+	position: center;
+	padding: 16px;	
+}
+/*Gallery*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: gold;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery  div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery div img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0);
+}
+
+.gallery div:hover {
+  z-index: 1;
+}
+
+.gallery div:hover img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/*Membership*/
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+/*Footer*/
+.fa {
+    padding: 9px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+	}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-instagram {
+  background: #ea4c89;
+  color: white;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>NYIT MA's NSBE Chapter</title>
+</head>
+ <link rel="stylesheet" type="text/css" href="nsbestylesheet.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--W3 Schools-->
+<script>
+<!--Highlights-->
+var slideI = 1;
+showSlides(slideI);
+function plusSlides(n) {
+  showSlides(slideI += n);
+}
+function currentSlide(n) {
+  showSlides(slideI = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var bull = document.getElementsByClassName("bull");
+  if (n > slides.length) {slideI = 1} 
+  if (n < 1) {slideI = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < bull.length; i++) {
+      bull[i].className = bull[i].className.replace(" active", "");
+  }
+  slides[slideI-1].style.display = "block"; 
+  bull[slideI-1].className += " active";
+} 
+</script>
+<body>
+<!--Navigation-->
+<a href="home.html"><img class = "logo" src = "NSBENYIT.png" alt = "logo" /></a>
+<table class = "nsbenav">
+	<tr>
+		<td><a href="home.html">Homepage</a></td> 
+		<td><a href="about.html">About</a></td>  
+		<td><a href="events.html">Events</a></td>  
+		<td><a href="gallery.html">Gallery</a></td>  
+		<td><a href="membership.html">Community Board</a></td> 
+	</tr>
+ </table>
+<!--Highlights-->
+<div class="highlights">
+  <div class="mySlides fade">
+    <img src="s1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="s2.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="consignup.jpg" style="width:100%">
+  </div>
+  <a class="p" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="n" onclick="plusSlides(1)">&#10095;</a>  
+</div>
+<br>
+<div style="text-align:center">
+  <span class="bull" onclick="currentSlide(1)"></span> 
+  <span class="bull" onclick="currentSlide(2)"></span> 
+  <span class="bull" onclick="currentSlide(3)"></span>
+</div>
+<!--Welcome Message-->
+<marquee>Welcome to NYIT Manhattan's NSBE Chapter!!</marquee>
+<!--E-board-->
+<div class = "eboard">
+	<h1>Meet the 2017-2018 Eboard</h1>
+<table>	
+	<tr>
+	<td>
+<!--President-->
+<div class="row">
+	<div class="column">
+		<div class="card">
+			<img src="nick.jpg" alt="Nick" style="width:100%">
+			<div class="con">
+				<h2>Nick Takyi</h2>
+				<p class="title">President</p>
+			</div>
+		</div>
+	</div>
+</div>
+</td>
+<!--Internal Vice President-->
+<td>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="teylor.jpg" alt="teylor" style="width:100%; height: 250px">
+      <div class="con">
+        <h2>Teylor Harris</h2>
+        <p class="title">External Vice President</p>
+      </div>
+    </div>
+  </div>
+</div>
+</td>
+<!--External Vice President-->
+<td>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="mike.jpg" alt="Mike" style="width:100%; height: 250px">
+      <div class="con">
+        <h2>Michael Favale</h2>
+        <p class="title">Internal Vice President</p>
+      </div>
+    </div>
+  </div>
+</div>
+	</td>
+	</tr>
+<!--Secretary-->
+<tr>
+<td>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="phil.jpg" alt="Phil" style="width:100%">
+      <div class="con">
+        <h2>Philip Pecorella</h2>
+        <p class="title">Secretary</p>
+      </div>
+    </div>
+  </div>
+</div>
+</td>
+<!--Treasurer-->
+<td>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="andre.jpg" alt="andre" style="width:100%">
+      <div class="con">
+        <h2>Andre Gustave</h2>
+		<p class="title">Treasurer</p>
+      </div>
+    </div>
+  </div>
+</div>
+</td>
+<!--Senator-->
+<td>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="suhib.jpg" alt="suhaib" style="width:100%">
+      <div class="con">
+        <h2>Suhaib Elhadi</h2>
+        <p class="title">Senator</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<!--NSBE Social Media Links-->
+<hr width = "90%" color = "gold" />    
+<br />
+<footer>
+<div class="social">
+<table>
+  <td><p style = "color:white">Follow us</p></td>
+  <td><a href="https://instagram.com/nyitnsbe" class="fa fa-instagram"></a></td>
+  <td><a href="https://snapchat.com/nsbema" class="fa fa-snapchat-ghost"></a></td>  
+</table>	
+  <p>&copy; 2017 Marciana Davis <p>
+  </div>
+</footer>
+</body>
+</html>
