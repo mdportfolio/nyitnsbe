@@ -1,1 +1,2 @@
 # nyitnsbe
+I created a website for the National Society of Black Engineers (NSBE) Chapter from my previous college, New York Institute of Technology- Manhattan. Our NSBE chapter was founded in Spring 2013 by five passionate collegiate students because they saw a need for more representation for minority students in STEM. The purpose of the website is to show potential and current collegiate members what the NSBE Chapter at NYIT MA is all about. Our goal is to get new members to sign up for our club and more current and past members involved with our chapter.
